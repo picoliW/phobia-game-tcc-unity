@@ -3716,6 +3716,8 @@ MonoBehaviour:
   - text: "Ao subir as escadas, voc\xEA ver\xE1 portas. Cada uma delas representa
       uma fobia diferente, um desafio que voc\xEA poder\xE1 enfrentar no seu tempo."
     portrait: {fileID: 21300000, guid: 44fd69f21a5cae7409f51f8950f142e8, type: 3}
+  - text: Subindo as escadas, a porta a esquerda leva a acrofobia (Fobia de altura)
+    portrait: {fileID: 21300000, guid: c1f6ea00aabdd094db7ee93c9886a4f9, type: 3}
   - text: "N\xE3o h\xE1 pressa. \xC9 importante respeitar o seu pr\xF3prio ritmo.\r"
     portrait: {fileID: 21300000, guid: c1f6ea00aabdd094db7ee93c9886a4f9, type: 3}
   - text: Antes de iniciar, respire fundo. Observe o ambiente, os sons, a luz. Permita-se
@@ -3734,7 +3736,7 @@ MonoBehaviour:
       diferente de exposi\xE7\xE3o."
     portrait: {fileID: 21300000, guid: 975ddd929107f4e4a81b470e355bcca6, type: 3}
   - text: "Lembre-se: o medo \xE9 uma rea\xE7\xE3o natural. A coragem n\xE3o \xE9
-      aus\xEAncia de medo \u2014 \xE9 continuar, mesmo com ele."
+      aus\xEAncia de medo, \xE9 continuar, mesmo com ele."
     portrait: {fileID: 21300000, guid: a1817d6a28e73d742b3ecf85fd556ff9, type: 3}
 --- !u!4 &1971231137
 Transform:
