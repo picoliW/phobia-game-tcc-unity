@@ -2,7 +2,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
-using System.Collections.Generic; // <-- ADICIONADO
+using System.Collections.Generic; 
+using System;
 
 [System.Serializable]
 public class DialogueLine
@@ -15,6 +16,8 @@ public class DialogueLine
 
 public class VRDialogueManager : MonoBehaviour
 {
+    public Action onDialogueComplete;
+
     public Image portraitImage;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
@@ -62,7 +65,6 @@ public class VRDialogueManager : MonoBehaviour
         if (dialoguePanel != null) dialoguePanel.SetActive(true);
         DisplayNextLine();
     }
-
     public void DisplayNextLine()
     {
         if (isTyping) return;
@@ -71,6 +73,7 @@ public class VRDialogueManager : MonoBehaviour
         {
             dialogueActive = false;
             if (dialoguePanel != null) dialoguePanel.SetActive(false);
+            onDialogueComplete?.Invoke(); 
             return;
         }
 
@@ -81,7 +84,7 @@ public class VRDialogueManager : MonoBehaviour
         currentFullSentence = currentLine.text;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentLine.text));
-    }
+    }   
 
     IEnumerator TypeSentence(string sentence)
     {
@@ -92,7 +95,7 @@ public class VRDialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             if (dialogueText != null) dialogueText.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSecondsRealtime(typingSpeed); 
         }
 
         isTyping = false;
