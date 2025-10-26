@@ -5,9 +5,13 @@ public class DialogueTriggerMenu : MonoBehaviour
     public VRDialogueManager dialogueManager;
     public string speakerName;
     public DialogueEntry[] dialogues;
+    private const string DialogueShownKey = "MenuDialogueShown"; 
 
     void Start()
     {
+        if (PlayerPrefs.GetInt(DialogueShownKey, 0) == 1)
+            return;
+
         DialogueLine[] lines = new DialogueLine[dialogues.Length];
 
         for (int i = 0; i < dialogues.Length; i++)
@@ -21,5 +25,8 @@ public class DialogueTriggerMenu : MonoBehaviour
         }
 
         dialogueManager.StartDialogue(lines);
+
+        PlayerPrefs.SetInt(DialogueShownKey, 1);
+        PlayerPrefs.Save();
     }
 }
