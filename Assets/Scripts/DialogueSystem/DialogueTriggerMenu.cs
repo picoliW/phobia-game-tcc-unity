@@ -10,7 +10,13 @@ public class DialogueTriggerMenu : MonoBehaviour
     void Start()
     {
         if (PlayerPrefs.GetInt(DialogueShownKey, 0) == 1)
+        {
+            if (dialogueManager != null)
+            {
+                dialogueManager.HideDialoguePanel();
+            }
             return;
+        }
 
         DialogueLine[] lines = new DialogueLine[dialogues.Length];
 

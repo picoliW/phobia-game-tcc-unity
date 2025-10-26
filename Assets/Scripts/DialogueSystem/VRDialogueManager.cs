@@ -32,7 +32,6 @@ public class VRDialogueManager : MonoBehaviour
 
     void Start()
     {
-        dialoguePanel.SetActive(true);
     }
 
     void Update()
@@ -65,6 +64,7 @@ public class VRDialogueManager : MonoBehaviour
         if (dialoguePanel != null) dialoguePanel.SetActive(true);
         DisplayNextLine();
     }
+
     public void DisplayNextLine()
     {
         if (isTyping) return;
@@ -100,5 +100,13 @@ public class VRDialogueManager : MonoBehaviour
 
         isTyping = false;
         if (hintText != null) hintText.text = "R-Trigger →";
+    }
+
+    public void HideDialoguePanel()
+    {
+        if (dialoguePanel != null)
+            dialoguePanel.SetActive(false);
+        
+        dialogueActive = false;
     }
 }
