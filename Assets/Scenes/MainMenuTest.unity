@@ -882,6 +882,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1996857865467848924, guid: e0ba6e1e16e9510479a0c31fc8c69983, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1327216779}
+    - targetCorrespondingSourceObject: {fileID: -5025603790862874055, guid: e0ba6e1e16e9510479a0c31fc8c69983, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 463487165}
+    - targetCorrespondingSourceObject: {fileID: -5025603790862874055, guid: e0ba6e1e16e9510479a0c31fc8c69983, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 463487164}
     - targetCorrespondingSourceObject: {fileID: 3196447681129034096, guid: e0ba6e1e16e9510479a0c31fc8c69983, type: 3}
       insertIndex: -1
       addedObject: {fileID: 455184684}
@@ -895,6 +901,45 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 797305726}
   m_SourcePrefab: {fileID: -5645937942226959685, guid: e0ba6e1e16e9510479a0c31fc8c69983, type: 3}
+--- !u!1 &463487163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5025603790862874055, guid: e0ba6e1e16e9510479a0c31fc8c69983, type: 3}
+  m_PrefabInstance: {fileID: 463487162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &463487164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463487163}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9868891, y: 11.065652, z: 26.414864}
+  m_Center: {x: 0.0004882813, y: -14.023738, z: 13.207439}
+--- !u!114 &463487165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463487163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4420d0695f12fe742992377ab63a5073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoToNictophobia
+  sceneName: 
 --- !u!1 &521202838
 GameObject:
   m_ObjectHideFlags: 0
