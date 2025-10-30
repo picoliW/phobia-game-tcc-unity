@@ -341,7 +341,6 @@ GameObject:
   - component: {fileID: 92472713}
   - component: {fileID: 92472717}
   - component: {fileID: 92472715}
-  - component: {fileID: 92472718}
   - component: {fileID: 92472714}
   m_Layer: 5
   m_Name: 4Button
@@ -415,10 +414,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 92472718}
-        m_TargetAssemblyTypeName: GoToNictophobiaLevel2, Assembly-CSharp
-        m_MethodName: LoadNictophobiaLevel2
-        m_Mode: 3
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GoToAcrophobiaLevel2, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -465,19 +464,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92472712}
   m_CullTransparentMesh: 1
---- !u!114 &92472718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92472712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6de576f67a448c049bbf63e4a15fff42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoToNictophobiaLevel2
-  avisoUI: {fileID: 512008862}
 --- !u!1 &127827892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,7 +1047,6 @@ GameObject:
   - component: {fileID: 728999589}
   - component: {fileID: 728999593}
   - component: {fileID: 728999591}
-  - component: {fileID: 728999594}
   - component: {fileID: 728999590}
   m_Layer: 5
   m_Name: '3Button '
@@ -1135,10 +1120,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 728999594}
-        m_TargetAssemblyTypeName: GoToNictophobiaLevel2, Assembly-CSharp
-        m_MethodName: LoadNictophobiaLevel2
-        m_Mode: 3
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GoToAcrophobiaLevel2, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1185,19 +1170,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728999588}
   m_CullTransparentMesh: 1
---- !u!114 &728999594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728999588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6de576f67a448c049bbf63e4a15fff42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoToNictophobiaLevel2
-  avisoUI: {fileID: 2137179188}
 --- !u!1 &853728503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,7 +2067,6 @@ GameObject:
   - component: {fileID: 1090191875}
   - component: {fileID: 1090191879}
   - component: {fileID: 1090191877}
-  - component: {fileID: 1090191880}
   - component: {fileID: 1090191876}
   m_Layer: 5
   m_Name: 2Button
@@ -2169,10 +2140,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1090191880}
-        m_TargetAssemblyTypeName: GoToNictophobiaLevel2, Assembly-CSharp
-        m_MethodName: LoadNictophobiaLevel2
-        m_Mode: 3
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GoToAcrophobiaLevel2, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2219,19 +2190,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090191874}
   m_CullTransparentMesh: 1
---- !u!114 &1090191880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090191874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6de576f67a448c049bbf63e4a15fff42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoToNictophobiaLevel2
-  avisoUI: {fileID: 0}
 --- !u!1 &1122478595
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,10 +3102,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1395014479}
-        m_TargetAssemblyTypeName: GoToNictophobiaLevel2, Assembly-CSharp
-        m_MethodName: LoadNictophobiaLevel2
-        m_Mode: 3
+      - m_Target: {fileID: 1395014474}
+        m_TargetAssemblyTypeName: GoToAcrophobiaLevel2, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4036,7 +3994,6 @@ GameObject:
   - component: {fileID: 1743878841}
   - component: {fileID: 1743878845}
   - component: {fileID: 1743878843}
-  - component: {fileID: 1743878846}
   - component: {fileID: 1743878842}
   m_Layer: 5
   m_Name: 5Button
@@ -4110,10 +4067,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1743878846}
-        m_TargetAssemblyTypeName: GoToNictophobiaLevel2, Assembly-CSharp
-        m_MethodName: LoadNictophobiaLevel2
-        m_Mode: 3
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GoToAcrophobiaLevel2, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4160,19 +4117,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743878840}
   m_CullTransparentMesh: 1
---- !u!114 &1743878846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743878840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6de576f67a448c049bbf63e4a15fff42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GoToNictophobiaLevel2
-  avisoUI: {fileID: 314545729}
 --- !u!1001 &1783553296
 PrefabInstance:
   m_ObjectHideFlags: 0
