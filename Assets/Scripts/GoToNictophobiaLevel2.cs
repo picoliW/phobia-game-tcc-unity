@@ -11,7 +11,7 @@ public class GoToNictophobiaLevel2 : MonoBehaviour
     {
         if (opcao == 1 || opcao == 2)
         {
-            SceneManager.LoadScene("NictophobiaLevel2");
+            SceneManager.LoadScene("NictofobiaLevel2");
         }
         else if (opcao == 3 || opcao == 4)
         {
@@ -22,7 +22,7 @@ public class GoToNictophobiaLevel2 : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("NictophobiaLevel2");
+                SceneManager.LoadScene("NictofobiaLevel2");
             }
         }
         else if (opcao == 5)
