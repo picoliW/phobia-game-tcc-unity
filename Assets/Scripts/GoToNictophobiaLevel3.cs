@@ -2,17 +2,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class GoToNictofobiaLevel2 : MonoBehaviour
+public class GoToNictofobiaLevel3 : MonoBehaviour
 {
     public GameObject avisoUI;
     private bool avisoAtivo = false;
     public GameObject canvasPrincipal;
 
-    public void LoadNictofobiaLevel2Level2(int opcao)
+    public void LoadNictofobiaLevel3(int opcao)
     {
         if (opcao == 1 || opcao == 2)
         {
-            SceneManager.LoadScene("NictofobiaLevel2");
+            SceneManager.LoadScene("NictofobiaLevel3");
         }
         else if (opcao == 3 || opcao == 4)
         {
@@ -29,8 +29,8 @@ public class GoToNictofobiaLevel2 : MonoBehaviour
         }
     }
 
-    public void LoadNictofobiaLevel2Button(){
-        SceneManager.LoadScene("NictofobiaLevel2");
+    public void LoadNictofobiaLevel3Button(){
+        SceneManager.LoadScene("NictofobiaLevel3");
     }
 
     private IEnumerator MostrarAvisoEFechar()
@@ -45,6 +45,6 @@ public class GoToNictofobiaLevel2 : MonoBehaviour
 
     public void RestartCurrentLevel()
     {
-        SceneManager.LoadScene("NictofobiaLevel1");
+        SceneManager.LoadScene("NictofobiaLevel2");
     }
 }

@@ -6,6 +6,7 @@ public class GoToAcrophobiaLevel3 : MonoBehaviour
 {
     public GameObject avisoUI;
     private bool avisoAtivo = false;
+    public GameObject canvasPrincipal;
 
     public void LoadAcrophobiaLevel3(int opcao)
     {
@@ -15,14 +16,11 @@ public class GoToAcrophobiaLevel3 : MonoBehaviour
         }
         else if (opcao == 3 || opcao == 4)
         {
+            canvasPrincipal.SetActive(false);
             if (!avisoAtivo)
             {
                 avisoUI.SetActive(true);
                 avisoAtivo = true;
-            }
-            else
-            {
-                SceneManager.LoadScene("AcrophobiaLevel3");
             }
         }
         else if (opcao == 5)
@@ -31,13 +29,22 @@ public class GoToAcrophobiaLevel3 : MonoBehaviour
         }
     }
 
+    public void LoadAcrophobiaLevel3Button(){
+        SceneManager.LoadScene("AcrophobiaLevel3");
+    }
+
     private IEnumerator MostrarAvisoEFechar()
     {
         avisoUI.SetActive(true); 
-        yield return new WaitForSeconds(5f); 
+        yield return new WaitForSeconds(5f);
         Application.Quit();
         #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; 
+        UnityEditor.EditorApplication.isPlaying = false;
         #endif
+    }
+
+    public void RestartCurrentLevel()
+    {
+        SceneManager.LoadScene("AcrophobiaLevel2");
     }
 }

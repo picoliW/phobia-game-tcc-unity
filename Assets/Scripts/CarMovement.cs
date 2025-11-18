@@ -3,20 +3,19 @@ using UnityEngine;
 public class CarMovement : MonoBehaviour
 {
     [Header("Pontos de Movimento")]
-    public Transform pointA;  // Ponto de partida
-    public Transform pointB;  // Ponto de destino
+    public Transform pointA;  
+    public Transform pointB;  
     
     [Header("Configurações do Movimento")]
-    public float speed = 5f;  // Velocidade do carro
-    public float rotationSpeed = 5f;  // Velocidade de rotação
-    public float arrivalThreshold = 0.5f;  // Distância para considerar que chegou
+    public float speed = 5f;  
+    public float rotationSpeed = 5f;  
+    public float arrivalThreshold = 0.5f;  
     
-    private bool movingToB = true;  // Direção do movimento
-    private Vector3 targetPosition;  // Posição alvo atual
+    private bool movingToB = true;  
+    private Vector3 targetPosition;  
 
     void Start()
     {
-        // Começa no ponto A
         if (pointA != null)
         {
             transform.position = pointA.position;
@@ -26,17 +25,14 @@ public class CarMovement : MonoBehaviour
 
     void Update()
     {
-        // Verifica se os pontos estão configurados
         if (pointA == null || pointB == null)
         {
             Debug.LogWarning("Pontos A ou B não estão configurados no inspector!");
             return;
         }
 
-        // Move o carro em direção ao alvo
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-        // Rotaciona o carro para olhar na direção do movimento
         Vector3 direction = (targetPosition - transform.position).normalized;
         if (direction != Vector3.zero)
         {
@@ -44,30 +40,23 @@ public class CarMovement : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
 
-        // Verifica se chegou ao destino
         if (Vector3.Distance(transform.position, targetPosition) < arrivalThreshold)
         {
-            // Alterna a direção do movimento
             movingToB = !movingToB;
             UpdateTargetPosition();
             
-            // Se voltou para A, pode adicionar um pequeno delay ou efeito aqui
             if (!movingToB)
             {
-                // Opcional: reinicia completamente (teleporta) para o ponto A
-                // transform.position = pointA.position;
-                // transform.rotation = pointA.rotation;
+
             }
         }
     }
 
     void UpdateTargetPosition()
     {
-        // Atualiza a posição alvo baseado na direção atual
         targetPosition = movingToB ? pointB.position : pointA.position;
     }
 
-    // Método para visualizar os pontos no editor
     void OnDrawGizmos()
     {
         if (pointA != null && pointB != null)
